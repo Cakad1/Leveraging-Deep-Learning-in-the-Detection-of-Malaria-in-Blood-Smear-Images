@@ -2,23 +2,22 @@
 
 This project leverages Convolutional Neural Networks (CNNs) to automate malaria detection, enhancing diagnostic speed and accuracy. EfficientNetB0 outperformed other models, showing high accuracy and efficiency, making it suitable for resource-limited settings and potential mobile applications.	
 
-# Table of Content
+## Table of Contents
+1. [Objectives](#objectives)
+2. [Methodology](#methodology)
+3. [Results](#results)
+4. [Performance Comparison](#performance-comparison)
+5. [Conclusion](#conclusion)
+6. [Recommendations](#recommendations)
 
-1. Objectives
-2. Methodology
-3. Results
-4. Performance Comparism
-5. Conclusion
-6. Recommendations
-
-# Objectives
+## Objectives
 
 The primary objectives of the project were:
 * To build a CNN-based malaria detection system that classifies blood smear images as parasitized or uninfected.
 * To compare the performance of different CNN architectures and identify the most efficient model in terms of accuracy and computational efficiency.
 * To optimize the models to ensure their applicability in resource-limited settings, where high accuracy and low computational requirements are crucial.
 
-# Methodology
+## Methodology
 
 **Dataset**
 
@@ -47,7 +46,7 @@ The project implemented and compared five CNN architectures:
 * Early stopping and learning rate reduction were employed to avoid overfitting.
 * The training data was split into 80% for training, 10% for validation, and 10% for testing.
 
-# Results
+## Results
 
 **Model Accuracy**
 
@@ -105,17 +104,17 @@ The confusion matrices and ROC curves were generated for each model to further e
 
 The Area Under the Curve (AUC) was calculated for each model to quantify their ability to distinguish between parasitized and uninfected cells. EfficientNetB0 showed the highest AUC score of 0.95, followed closely by Manual CNN and ResNet50.
 
-# Performance Comparison
+## Performance Comparison
 
 After analyzing the results, EfficientNetB0 emerged as the best model based on its balance of accuracy, computational efficiency, and validation performance. Although the Manual CNN also achieved comparable accuracy, EfficientNetB0's pre-trained nature and optimized architecture made it more suitable for deployment in real-world settings, especially in resource-limited environments.
 
 ![Compare CNN Model Performance](https://github.com/user-attachments/assets/3fed2799-a88c-45db-9d30-3b1a30f9c53b)
 
-# Conclusion
+## Conclusion
 
 This project successfully demonstrated the power of CNN models in automating the detection of malaria in blood smear images. By comparing five different models, EfficientNetB0 was identified as the most promising model for practical use, due to its accuracy and efficient design. Future work could involve deploying this model in mobile applications to further improve the accessibility and efficiency of malaria diagnosis in remote areas.
 
-# Recommendations
+## Recommendations
 
 * Deployment of the selected model (EfficientNetB0) in mobile or embedded systems for real-time malaria detection.
 * Expanding the dataset to include more diverse blood smear images from different geographical regions to improve generalization.
